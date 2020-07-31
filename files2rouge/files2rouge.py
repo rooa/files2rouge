@@ -77,6 +77,8 @@ def run(summ_path,
 
     utils.tee(saveto, output)
     print("Elapsed time: %.3f seconds" % (time() - stime))
+    
+    return r.output_to_dict(output)
 
 
 def main():
